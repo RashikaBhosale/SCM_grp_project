@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\naina\Desktop\Projects Ideas\Thrift.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' type='text/css' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="icon" href="C:\Users\naina\Downloads\favicon (1).ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="C:\Users\naina\Desktop\Practice\Login style.css">
+</head>
+<body onload="show()">
+	<div>
+		<nav>
+	<div class="topnav" id="myTopnav">
+		<div>
+			<a href="#"><img src="C:\Users\naina\Downloads\Zen Store.jpg" width="80px" height="80px"></a>
+		</div>
+	<a href="C:\Users\naina\Desktop\Projects Ideas\The ZEN Store.html">Home</a>
+	<div class="dropdown">
+	<button class="dropbtn">Garment<i class="fa fa-caret-down"></i></button>
+	<div class="dropdown-content">
+		<a href="C:\Users\naina\Desktop\Projects Ideas\Dresses.html">Dress</a>
+		<a href="C:\Users\naina\Desktop\Projects Ideas\Jackets,Coats.html">Jackets And Coats</a>
+		<a href="C:\Users\naina\Desktop\Projects Ideas\top,T-shirt,tee.html">Top,T-shirt,Tee</a>
+		<a href="C:\Users\naina\Desktop\Projects Ideas\Skirts.html">Skirt</a>
+		<a href="C:\Users\naina\Desktop\Projects Ideas\Accesories.html">Accesory</a>
+		<a href="C:\Users\naina\Desktop\Projects Ideas\Menswear.html">Menswear</a>
+	</div> 
+</div>
+	<a href="C:\Users\naina\Desktop\Projects Ideas\Shoes & Bags.html">Shoes & Bags</a>
+	<a href="C:\Users\naina\Downloads\about us.html">About</a>
+	<a href="C:\Users\naina\Desktop\Projects Ideas\Donation Page 2.html">Donate</a>
+<div class="topnav-right">
+    <a href="C:\Users\naina\Downloads\login (2).html">Log In</a>
+    <a href="#search" class="cart"><i class="fas fa-shopping-cart">Cart<span>0</span></i></a>
+  </div>
+</div>
+	</nav>
+	<div id="target1">
+		 <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <div class="social-icons">
+            <img src="">
+            <img src="">
+            <img src="">
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="email" class="input-field" placeholder="Email Id">
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>I Agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Log In</button>
+        </form>
+    </div>
+</div>
+</div>
+	<p class="para1">What Do You Want To See?</p>
+    <div class="parent">
+       <div id="leftarrow" onclick="moveLeft()">
+           <button>&lt;</button>
+       </div>
+       <div class="child" id="c1">
+          <a href="C:\Users\naina\Desktop\Projects Ideas\Dresses.html"><img src="C:\Users\naina\Downloads\Dresses LOgo.png"></a>
+           <div class="overlay">Dresses</div>
+       </div>
+       <div class="child" id="c2">
+        <a href="C:\Users\naina\Desktop\Projects Ideas\top,T-shirt,tee.html"><img src="C:\Users\naina\Downloads\Women T-Shirts Image.jpg"></a>
+        <div class="overlay">Tops</div>
+     </div>
+     <div class="child" id="c3">
+        <a href="C:\Users\naina\Desktop\Projects Ideas\Menswear.html"><img src="C:\Users\naina\Downloads\men-tshirt.png"></a>
+        <div class="overlay">Menswear</div>
+     </div>
+     <div class="child" id="c4">
+        <a href="C:\Users\naina\Desktop\Projects Ideas\Shoes & Bags.html"><img src="C:\Users\naina\Downloads\Women-Shoes.png"></a>
+        <div class="overlay">Shoes</div>
+     </div>
+     <div class="child" id="c5">
+        <a href="C:\Users\naina\Desktop\Projects Ideas\Jackets,Coats.html"><img src="C:\Users\naina\Downloads\Men-Jacket.png"></a>
+        <div class="overlay">Jackets</div>
+     </div>
+     <div class="child" id="c6">
+        <a href="C:\Users\naina\Desktop\Projects Ideas\Skirts.html"><img src="C:\Users\naina\Downloads\Skirts.png"></a>
+        <div class="overlay">Skirts</div>
+     </div>
+     <div class="child" id="c7">
+        <a href="C:\Users\naina\Desktop\Projects Ideas\Meet The Clothes (All Garments).html"><img src="C:\Users\naina\Downloads\All Products Image.png"></a>
+        <div class="overlay">All Products</div>
+     </div>
+     <div class="child" id="c8">
+        <a href="C:\Users\naina\Desktop\Projects Ideas\Accesories.html"><img src="C:\Users\naina\Downloads\Jewelery Image.png"></a>
+        <div class="overlay">Accesories</div>
+     </div>
+     <div id="rightarrow" onclick="moveRight()">
+        <button>&gt;</button>
+    </div>
+</div>
+<div>
+	<div id="target2"></div>
+</div>
+<div class="naina"><p>New Arrivals</p></div>
+<div class="flex-container">
+<div class="container1">
+  <img src="C:\Users\naina\Downloads\image thrift 107.jpg" alt="Avatar" class="image1" width="250px" height="250px">
+  <div class="overlay1">
+    <div class="text">Women Winter Collection</div>
+  </div>
+</div>
+<div class="container2">
+  <img src="C:\Users\naina\Downloads\image thrift 108.jpg" alt="Avatar" class="image2" width="250px" height="250px">
+  <div class="overlay1">
+    <div class="text">Women Winter Collection</div>
+  </div>
+</div>
+<div class="container3">
+  <img src="C:\Users\naina\Downloads\image thrift 109.jpg" alt="Avatar" class="image3" width="250px" height="250px">
+  <div class="overlay1">
+    <div class="text">Women Winter Collection</div>
+  </div>
+</div>
+</div>
+<div class="flex-container">
+<div class="container1">
+  <img src="C:\Users\naina\Downloads\image thrift 110.jpg" alt="Avatar" class="image4" width="250px" height="250px">
+  <div class="overlay1">
+    <div class="text">Women Winter Collection</div>
+  </div>
+</div>
+<div class="container2">
+  <img src="C:\Users\naina\Downloads\p5i.PNG" alt="Avatar" class="image5" width="250px" height="250px">
+  <div class="overlay1">
+    <div class="text">Men Winter Collection</div>
+  </div>
+</div>
+<div class="container3">
+  <img src="C:\Users\naina\Downloads\p5h.PNG" alt="Avatar" class="image6" width="250px" height="250px">
+  <div class="overlay1">
+    <div class="text">Men Winter Collection</div>
+  </div>
+</div>
+</div>
+<div class="display7">
+		<div id="target3"><a href="C:\Users\naina\Desktop\Projects Ideas\Donation Page 2.html">
+<p class="intro1" id="para" onmouseenter="myFunction()">Put Your Love Into Action</p><br><br>
+<h3 class="demo" id="h3" onmouseenter="myFunction1()">100% of your gift stays local to help your neighbors in need</h3>
+		</a></div>
+	</div>
+	</head>
+<body>
+<section class='contact'>
+<div id='container'>
+	<div id='heading'>
+<h2><span>
+                    <i class="far fa-address-card"></i>
+                </span><span>Contact Us</span></h2>
+</div>
+<div id='data'>
+<div id='address'>
+	<p class='head'>Address</p>
+	<ul class='vertical-list'>
+<li><i class="fas fa-map-marker-alt"></i>The Zen Store<br><br>43/46,Empire State Building,<br><br>136/148,D.N. Road,<br><br>Mumbai-400 001,India
+<li><i class="far fa-envelope"></i><a href='' style='color:rgb(86, 200, 253)'>support@zen.com</a>
+<li><i class="fas fa-mobile-alt"></i>+91-864298642
+<li><i class="fas fa-mobile-alt"></i>+91-856422566</li></ul>
+<div id='icons'><ul class='hlist text-center social-icons'><li><a href='' target='_blank'><i class="fab fa-linkedin"></i></a>
+	<li><a href='' target='_blank'><i class="fab fa-facebook"></i></a>
+	<li><a href='' target='_blank'><i class="fab fa-quora"></i></a>
+	<li><a href='' target='_blank'><i class="fab fa-google"></i></a>
+	<li><a href='' target='_blank'><i class="fab fa-stack-overflow"></i></a></ul>
+</div></div>
+<div id='company'>
+	<p class='head'>Company</p>
+	<ul class='vertical-list'>
+		<li>About Us
+			<li>Why Zen<li>Our Team<li>Careers<li>Media<li>Blog<li>Charity Partners<li>Loyality Program<li>Covid-19 Policy
+	</ul>
+</div>
+<div id='customer'>
+	<p class='head'>Customer Service</p>
+	<ul class='vertical-list'>
+		<li>How it Works
+			<li>Consign<li>FAQ's<li>Available Brands<li>Terms and Conditions<li>Return and Refund Policy<li>Privacy Policy<li>Disclaimer
+	</ul>
+</div>
+</div></div>
+</section>
+<script>
+        var left=1;
+        var right=4;
+         function show(){
+            for(i=left;i<=right;i++){ 
+            
+            document.getElementById("c"+i).style.display="inline-block";
+            }
+        }
+        function moveLeft(){
+            if(left<=3 && right<=7){
+
+               
+               document.getElementById("c"+left).style.display="none";
+               left+=1;
+               right+=1;
+               for(i=left;i<=right;i++){ 
+               
+               document.getElementById("c"+i).style.display="inline-block";
+               }
+           }
+           else
+               return;
+}
+        function moveRight(){
+            if(left>=2 && right>=6){
+            
+                document.getElementById("c"+right).style.display="none";
+                left-=1;
+                right-=1;
+                for(i=left;i<=right;i++){ 
+              
+                document.getElementById("c"+i).style.display="inline-block";
+              }
+            }
+            else
+               return;
+}
+  var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+         function myFunction(){
+        	document.getElementById("para").style.color="#7d291f";
+        }
+        function myFunction1(){
+        	document.getElementById("h3").style.color="#7d291f";
+        }
+</script> 
+</body>
+</html>
